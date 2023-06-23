@@ -1,0 +1,307 @@
+.main-about {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 6vh;
+    height: 15vh;
+    width: 100%;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 20px #ff0000;
+    z-index: 4;
+    position: absolute;
+    letter-spacing: 2px;
+}
+
+.about-head h2 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    font-size: 5.3rem;
+}
+
+.about-head::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: #ff0000;
+    filter: blur(15px);
+}
+
+.about-head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 40%;
+    height: 100%;
+    background: #fe3a3a;
+    z-index: -2;
+    opacity: 0.5;
+    filter: blur(40px);
+}
+
+.photo-about {
+    display: flex;
+    /* border: 2px solid green; */
+    height: 100vh;
+    width: 100%;
+}
+
+.photo-about .my-photo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.photo-about .my-photo .photo-in {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35vh;
+    width: 350px;
+    /* height: 80%; */
+    /* background: #0e1538; */
+    overflow: hidden;
+    animation: slide-in 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.10;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+
+
+
+.photo-about .my-photo .photo-in img {
+    width: 350px;
+    height: 550px;
+    /* background:#ff02023f; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    border-bottom: 3px double #ff00008e;
+    border-top: 3px double #ff00008e;
+}
+
+
+.photo-about .my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 3vh;
+    animation: slide-out 2s;
+    animation-timing-function: linear;
+}
+@keyframes slide-out {
+    from {
+      transform: translateX(+100%);
+      opacity: 0.10;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+
+.photo-about .my-info span {
+    font-size: 2rem;
+    text-shadow: 0 0 10px #ff0000d7;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 10rem;
+}
+.photo-about .my-info span ul li{
+    margin: 3px;
+}
+.photo-about .my-info span ul li:first-child{
+    margin-top: 4rem;
+    color:#fe3a3a;
+}
+
+.photo-about .my-info p {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.photo-about .my-info .d-box {
+    transform-style: preserve-3d;
+    animation: animate-3d 15s linear infinite;
+    margin-top: 20vh;
+}
+
+.photo-about .my-info .d-box:hover {
+    animation-play-state: paused;
+}
+
+@keyframes animate-3d {
+    0% {
+        transform: perspective(1000px) rotateX(0deg) rotate(10deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateX(360deg) rotate(10deg);
+    }
+}
+
+.photo-about .my-info .d-box p {
+    position: absolute;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0 10px;
+    background: linear-gradient(90deg, transparent, #000000, transparent);
+    line-height: 0.6em;
+    transform-style: preserve-3d;
+    transform: translateX(-45%) rotateX(calc(var(--i) * 30deg)) translateZ(60px);
+}
+
+.photo-about .my-info .d-box p i {
+    font-style: initial;
+    color: #ff0000;
+}
+
+@media only screen and (max-width: 900px) {
+    .about-head h2 {
+        font-size: 4.3rem;
+    }
+
+    .photo-about {
+        flex-direction: column;
+    }
+
+    .photo-about .my-photo {
+        width: 100%;
+    }
+
+    .photo-about .my-photo .photo-in {
+        margin-top: 25vh;
+        margin-bottom: 5vh;
+    }
+
+    .photo-about .my-info {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .photo-about .my-info p {
+        font-size: 1.7rem;
+    }
+
+    .photo-about .my-info span {
+        font-size: 1.7rem;
+        margin-top: 15vh;
+        margin-left: 1.5rem;
+        margin-right: 10px;
+    }
+
+    .photo-about .my-info span ul li:first-child{
+        margin-top: -4rem;
+    }
+    .photo-about .my-info .d-box {
+        margin-top: 13vh;
+    }
+
+    .photo-about .my-info .d-box p {
+        transform: translateX(-45%) rotateX(calc(var(--i) * 30deg)) translateZ(50px);
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .about-head h2 {
+        font-size: 4.3rem;
+    }
+
+    .photo-about .my-info p {
+        font-size: 1.4rem;
+    }
+
+    .photo-about .my-info span {
+        font-size: 1.4rem;
+        margin-top: 12vh;
+    }
+
+    .photo-about .my-info .d-box {
+        margin-top: 12vh;
+    }
+}
+
+@media only screen and (max-width: 515px) {}
+
+@media only screen and (max-width: 500px) {
+    .about-head h2 {
+        font-size: 3.3rem;
+    }
+
+    .photo-about .my-info p {
+        font-size: 1.2rem;
+    }
+
+    .photo-about .my-info span {
+        font-size: 1.2rem;
+    }
+
+    .photo-about .my-info .d-box {
+        margin-top: 10vh;
+    }
+
+    .photo-about .my-info .d-box p {
+        transform: translateX(-45%) rotateX(calc(var(--i) * 30deg)) translateZ(40px);
+    }
+}
+
+@media only screen and (max-width: 460px) {}
+
+@media only screen and (max-width: 353px) {
+    .about-head h2 {
+        font-size: 2.3rem;
+    }
+
+    .photo-about .my-info p {
+        font-size: 1rem;
+    }
+
+    .photo-about .my-info span {
+        font-size: 1rem;
+        margin-top: 10vh;
+    }
+
+    .photo-about .my-info .d-box {
+        margin-top: 5vh;
+    }
+
+    .photo-about .my-info .d-box p {
+        transform: translateX(-45%) rotateX(calc(var(--i) * 30deg)) translateZ(30px);
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .about-head h2 {
+        font-size: 2.3rem;
+    }
+}

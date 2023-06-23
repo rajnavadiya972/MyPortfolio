@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-home-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-home {
+    width: 100%;
+    height: 100vh;
+}
+
+.video-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    object-fit: cover;
+}
+
+.my-about {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    color: #fff;
+    z-index: -1;
+    /* font-size: 3rem; */
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    animation: slide-in 1s;
+    animation-timing-function: linear;
+    /* border: 2px solid red; */
+}
+
+.my-about h1 {
+    margin-left: 3vw;
+    font-family: 'Bree Serif', serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 6.3rem;
+    line-height: 7.5rem;
+    position: relative;
+}
+
+.place {
+    background: -webkit-linear-gradient(242deg, #fff 3.43%, #fff066 15.69%, #ffa31a 55.54%, #ff4b9c 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+}
+
+.place:hover {
+    background: -webkit-linear-gradient(45deg, #fb0094 10%, #2200ff 65%, #ff0000 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+}
+
+.rubber-letter {
+    transition: 0.2s ease-in-out color;
+}
+
+.rubber-letter:hover {
+    display: inline-block;
+    cursor: pointer;
+    animation: rubberlatter 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.gray-text {
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    margin-left: 3vw;
+    margin-top: 3rem;
+    display: block;
+    color: #8d8d8d;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scroll-down {
+    margin-right: 1vw;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.scroll-down i {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.3vw;
+}
+
+.scroll-down p {
+    animation: bounce 1s ease-in-out infinite;
+    letter-spacing: 2px;
+}
+
+.about {
+    margin-bottom: 9rem;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+
+    10% {
+        transform: translateY(-5%);
+    }
+
+    20% {
+        transform: translateY(-10%);
+    }
+
+    30% {
+        transform: translateY(-15%);
+    }
+
+    40% {
+        transform: translateY(-20%);
+    }
+
+    50% {
+        transform: translateY(-30%);
+    }
+
+    60% {
+        transform: translateY(-20%);
+    }
+
+    70% {
+        transform: translateY(-15%);
+    }
+
+    80% {
+        transform: translateY(-10%);
+    }
+
+    90% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rubberlatter {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.10;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .my-about h1 {
+        font-size: 5.3rem;
+        line-height: 7rem;
+    }
+
+    .gray-text {
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+    }
+
+    .scroll-down {
+        font-size: 0.8em;
+    }
+
+    .about {
+        margin-bottom: 30rem;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .my-about h1 {
+        font-size: 4.5rem;
+        line-height: 5.5rem;
+    }
+
+    .gray-text {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+
+    .scroll-down {
+        font-size: 0.7em;
+    }
+
+    .about {
+        margin-bottom: 26rem;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .gray-text {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    .scroll-down {
+        font-size: 0.7em;
+    }
+
+    .about {
+        margin-bottom: 30rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .my-about h1 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+
+    .scroll-down {
+        font-size: 0.6em;
+    }
+
+    .about {
+        margin-bottom: 23rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .gray-text {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .scroll-down {
+        font-size: 0.6em;
+    }
+
+    .scroll-down p {
+        letter-spacing: 1px;
+    }
+
+    .about {
+        margin-bottom: 30rem;
+    }
+}
+
+@media only screen and (max-width: 353px) {
+    .my-about h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .gray-text {
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+
+    .scroll-down {
+        font-size: 0.5em;
+    }
+
+    .scroll-down p {
+        letter-spacing: 1px;
+    }
+
+    .about {
+        margin-bottom: 25rem;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .my-about h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .gray-text {
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+    }
+
+    .scroll-down {
+        font-size: 0.5em;
+    }
+
+    .scroll-down p {
+        letter-spacing: 1px;
+    }
+
+    .about {
+        margin-bottom: 30rem;
+    }
+}
