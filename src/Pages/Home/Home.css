@@ -247,7 +247,7 @@
     }
 }
 
-@media only screen and (max-width: 515px) {
+@media only screen and (max-width: 520px) {
     .gray-text {
         font-size: 1.2rem;
         letter-spacing: 2px;
@@ -292,7 +292,7 @@
     }
 
     .about {
-        margin-bottom: 30rem;
+        margin-bottom: 32rem;
     }
 }
 
@@ -316,7 +316,7 @@
     }
 
     .about {
-        margin-bottom: 25rem;
+        margin-bottom: 28rem;
     }
 }
 

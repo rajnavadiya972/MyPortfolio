@@ -157,6 +157,10 @@
         font-size: 3.3rem;
     }
 
+    .card{
+        font-size: 0.9rem;
+    }
+
 }
 
 @media only screen and (max-width: 460px) {
