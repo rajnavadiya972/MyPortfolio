@@ -58,6 +58,12 @@
     /* background: #ffffff30; */
     background: linear-gradient(to right,#ff00002c, #000000, #ff00002a, #000000);
 }
+.card:hover {
+    transform: scale(1.05);
+}
+.card-link{
+    text-decoration: none;
+}
 .for-child:nth-child(1){
     animation: slide-in 2s;
     animation-timing-function: linear;

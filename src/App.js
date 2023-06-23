@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useHistory } from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -16,32 +16,38 @@ import Skill from './Pages/Skill/Skill'
 import Navbar from './component/Navbar/Navbar';
 import Project from './Pages/Services/Project';
 import Contact from './Pages/Contact/Contact';
+import ScrollToTop from './Pages/ScrollToTop';
 
 const App = () => {
   return (
-   <Router>
-     <Navbar/>
-    <main>
-      <Switch>
-        <Route path="/" exact>
-          <Home/>
-        </Route>
-        <Route path="/about" exact>
-          <About/>
-        </Route>
-        <Route path="/skill" exact>
-          <Skill/>
-        </Route>
-        <Route path="/project" exact>
-          <Project/>
-        </Route>
-        <Route path="/contact" exact>
-          <Contact />
-        </Route>
-      </Switch>
-    </main>
-   </Router>
-  // <Navbar />
+    <Router>
+      <Navbar />
+      <main>
+        <ScrollToTop>
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/MyPortpholio" exact>
+              <Home />
+            </Route>
+            <Route path="/about" exact>
+              <About />
+            </Route>
+            <Route path="/skill" exact>
+              <Skill />
+            </Route>
+            <Route path="/project" exact>
+              <Project />
+            </Route>
+            <Route path="/contact" exact>
+              <Contact />
+            </Route>
+          </Switch>
+        </ScrollToTop>
+      </main>
+    </Router>
+    // <Navbar />
   );
 }
 

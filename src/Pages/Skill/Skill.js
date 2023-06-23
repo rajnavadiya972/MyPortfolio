@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useHistory} from 'react';
 import './Skill.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
