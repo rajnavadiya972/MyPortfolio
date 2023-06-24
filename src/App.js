@@ -1,4 +1,4 @@
-import React, { useEffect, useHistory } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -23,33 +23,24 @@ const App = () => {
     <Router>
       <Navbar />
       <main>
+
         <Switch>
           <ScrollToTop>
             <Route path="/" exact>
               <Home />
             </Route>
-          </ScrollToTop>
-          <ScrollToTop>
             <Route path="/MyPortpholio" exact>
               <Home />
             </Route>
-          </ScrollToTop>
-          <ScrollToTop>
             <Route path="/about" exact>
               <About />
             </Route>
-          </ScrollToTop>
-          <ScrollToTop>
             <Route path="/skill" exact>
               <Skill />
             </Route>
-          </ScrollToTop>
-          <ScrollToTop>
             <Route path="/project" exact>
               <Project />
             </Route>
-          </ScrollToTop>
-          <ScrollToTop>
             <Route path="/contact" exact>
               <Contact />
             </Route>
