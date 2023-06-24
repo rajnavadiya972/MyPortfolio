@@ -158,7 +158,7 @@
     }
 
     .card{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
 }
@@ -172,6 +172,9 @@
 @media only screen and (max-width: 353px) {
     .contact-head h2 {
         font-size: 2.3rem;
+    }
+    .card{
+        font-size: 0.6rem;
     }
 
 }
