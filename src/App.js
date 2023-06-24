@@ -29,6 +29,9 @@ const App = () => {
             <Route path="/MyPortpholio" exact>
               <Home />
             </Route>
+            <Route path="/" exact>
+              <Home />
+            </Route>
             <Route path="/MyPortpholio/about" exact>
               <About />
             </Route>
