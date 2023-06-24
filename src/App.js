@@ -26,22 +26,19 @@ const App = () => {
 
         <Switch>
           <ScrollToTop>
-            <Route path="/" exact>
-              <Home />
-            </Route>
             <Route path="/MyPortpholio" exact>
               <Home />
             </Route>
-            <Route path="/about" exact>
+            <Route path="/MyPortpholio/about" exact>
               <About />
             </Route>
-            <Route path="/skill" exact>
+            <Route path="/MyPortpholio/skill" exact>
               <Skill />
             </Route>
-            <Route path="/project" exact>
+            <Route path="/MyPortpholio/project" exact>
               <Project />
             </Route>
-            <Route path="/contact" exact>
+            <Route path="/MyPortpholio/contact" exact>
               <Contact />
             </Route>
           </ScrollToTop>

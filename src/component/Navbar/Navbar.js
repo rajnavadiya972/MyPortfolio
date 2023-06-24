@@ -43,7 +43,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <span></span>
                         <span></span>
-                        <NavLink className="nav-link" to="/about" exact onClick={addMenu}>
+                        <NavLink className="nav-link" to="/MyPortpholio/about" exact onClick={addMenu}>
                             <i className="far fa-address-book"></i> About
                         </NavLink>
                     </li>
@@ -51,14 +51,14 @@ const Navbar = () => {
                     <li className="nav-item">
                         <span></span>
                         <span></span>
-                        <NavLink className="nav-link" to="/project" exact onClick={addMenu}>
+                        <NavLink className="nav-link" to="/MyPortpholio/project" exact onClick={addMenu}>
                             <i className="far fa-clone"></i> Projects
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <span></span>
                         <span></span>
-                        <NavLink className="nav-link" to="/skill" exact onClick={addMenu}>
+                        <NavLink className="nav-link" to="/MyPortpholio/skill" exact onClick={addMenu}>
                             <i className="far fa-chart-bar"></i> Skill
                         </NavLink>
                     </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <span></span>
                         <span></span>
-                        <NavLink className="nav-link" to="/contact" exact onClick={addMenu}>
+                        <NavLink className="nav-link" to="/MyPortpholio/contact" exact onClick={addMenu}>
                             <i className="far fa-copy"></i> Contact Us
                         </NavLink>
                     </li>
