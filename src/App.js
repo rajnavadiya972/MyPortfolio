@@ -32,16 +32,16 @@ const App = () => {
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/MyPortpholio/about" exact>
+            <Route path="/MyPortpholio/about">
               <About />
             </Route>
-            <Route path="/MyPortpholio/skill" exact>
+            <Route path="/MyPortpholio/skill">
               <Skill />
             </Route>
-            <Route path="/MyPortpholio/project" exact>
+            <Route path="/MyPortpholio/project">
               <Project />
             </Route>
-            <Route path="/MyPortpholio/contact" exact>
+            <Route path="/MyPortpholio/contact">
               <Contact />
             </Route>
           </ScrollToTop>
