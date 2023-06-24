@@ -44,6 +44,18 @@ const App = () => {
             <Route path="/MyPortpholio/contact">
               <Contact />
             </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/skill">
+              <Skill />
+            </Route>
+            <Route path="/project">
+              <Project />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
           </ScrollToTop>
         </Switch>
       </main>
