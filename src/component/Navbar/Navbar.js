@@ -19,7 +19,7 @@ const Navbar = () => {
         <>
             <div className="navbars navigation">
                 <div className="my-logo">
-                    <p><NavLink to="/" exact>Raj</NavLink></p>
+                    <p><NavLink to="/MyPortpholio" exact>Raj</NavLink></p>
                 </div>
                 <div className="menu-bar" onClick={addMenu}>
                     {
@@ -35,8 +35,8 @@ const Navbar = () => {
                     <li className="nav-item active">
                         <span></span>
                         <span></span>
-                        <NavLink className="nav-link" to="/" exact onClick={addMenu}>
-                            <i className="fas fa-tachometer-alt"></i>Home
+                        <NavLink className="nav-link" to="/MyPortpholio" exact onClick={addMenu}>
+                            <i className="fas fa-tachometer-alt"></i> Home
                         </NavLink>
                     </li>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
                         <span></span>
                         <span></span>
                         <NavLink className="nav-link" to="/about" exact onClick={addMenu}>
-                            <i className="far fa-address-book"></i>About
+                            <i className="far fa-address-book"></i> About
                         </NavLink>
                     </li>
 
@@ -52,28 +52,28 @@ const Navbar = () => {
                         <span></span>
                         <span></span>
                         <NavLink className="nav-link" to="/project" exact onClick={addMenu}>
-                            <i className="far fa-clone"></i>Projects
+                            <i className="far fa-clone"></i> Projects
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <span></span>
                         <span></span>
                         <NavLink className="nav-link" to="/skill" exact onClick={addMenu}>
-                            <i className="far fa-chart-bar"></i>Skill
+                            <i className="far fa-chart-bar"></i> Skill
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <span></span>
                         <span></span>
-                        <NavLink className="nav-link" to="/" exact onClick={addMenu}>
-                            <i class="fas fa-university"></i>Education
+                        <NavLink className="nav-link" to="/MyPortpholio" exact onClick={addMenu}>
+                            <i class="fas fa-university"></i> Education
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <span></span>
                         <span></span>
                         <NavLink className="nav-link" to="/contact" exact onClick={addMenu}>
-                            <i className="far fa-copy"></i>Contact Us
+                            <i className="far fa-copy"></i> Contact Us
                         </NavLink>
                     </li>
                 </ul>
