@@ -23,28 +23,38 @@ const App = () => {
     <Router>
       <Navbar />
       <main>
-        <ScrollToTop>
-          <Switch>
+        <Switch>
+          <ScrollToTop>
             <Route path="/" exact>
               <Home />
             </Route>
+          </ScrollToTop>
+          <ScrollToTop>
             <Route path="/MyPortpholio" exact>
               <Home />
             </Route>
+          </ScrollToTop>
+          <ScrollToTop>
             <Route path="/about" exact>
               <About />
             </Route>
+          </ScrollToTop>
+          <ScrollToTop>
             <Route path="/skill" exact>
               <Skill />
             </Route>
+          </ScrollToTop>
+          <ScrollToTop>
             <Route path="/project" exact>
               <Project />
             </Route>
+          </ScrollToTop>
+          <ScrollToTop>
             <Route path="/contact" exact>
               <Contact />
             </Route>
-          </Switch>
-        </ScrollToTop>
+          </ScrollToTop>
+        </Switch>
       </main>
     </Router>
     // <Navbar />
